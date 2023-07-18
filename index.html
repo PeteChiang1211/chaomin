@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pete Chiang" />
+    <title>晁明建設</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/PeteChiang1211/chomin/main/logo-removebg-preview.ico"
+    />
+  </head>
+  <body>
+    <img
+      class="fixed-image"
+      src="https://raw.githubusercontent.com/PeteChiang1211/chomin/main/car.jpg"
+      alt="fixed-image"
+    />
+
+    <header>
+      <section class="logo">
+        <img
+          src="https://raw.githubusercontent.com/PeteChiang1211/chomin/main/logo.jpg"
+          alt="晁明建設logo"
+        />
+        <h1>晁明建設</h1>
+      </section>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#zhomin">關於晁明</a>
+          </li>
+          <li>
+            <a href="#">最新消息</a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/CHAO.MING.construction.Co.Ltd"
+              target="_blank"
+              >FB粉絲專頁</a
+            >
+          </li>
+          <li>
+            <a href="#contect">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img"></section>
+
+      <section id="zhomin" class="concern">
+        <h2>
+          關於晁明
+          <p>城市是一張畫布，晁明用心雕琢一棟棟值得世代相傳的好房子</p>
+        </h2>
+      </section>
+
+      <section id="contect" class="contect">
+        <h3>
+          聯絡我們 <br /><br />
+          <p>
+            <i class="fa-solid fa-phone"></i> 03-6570595 <br />
+            <i class="fa-solid fa-envelope"></i> minie.aul@gmail.com <br />
+            <i class="fa-solid fa-shop"></i> 新竹縣竹北市科大二街39號1樓
+          </p>
+        </h3>
+
+        <section class="right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.2376724344404!2d121.0051124759884!3d24.821544446812513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468368ca0820ccb%3A0x6d97e9288fd763a9!2z5pmB5piO5bu66Kit5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1689251622298!5m2!1szh-TW!2stw"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      建議使用Chrome、Firefox、Safari最新版本瀏覽 Copyright©2023
+      晁明建設有限公司
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topbackground = document.querySelector("section.background-img");
+        if (
+          topbackground.style.backgroundImage ==
+          'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/01.jpg")'
+        ) {
+          topbackground.style.backgroundImage =
+            'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/02.jpg")';
+        } else if (
+          topbackground.style.backgroundImage ==
+          'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/02.jpg")'
+        ) {
+          topbackground.style.backgroundImage =
+            'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/03.jpg")';
+        } else if (
+          topbackground.style.backgroundImage ==
+          'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/03.jpg")'
+        ) {
+          topbackground.style.backgroundImage =
+            'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/04.jpg")';
+        } else if (
+          topbackground.style.backgroundImage ==
+          'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/04.jpg")'
+        ) {
+          topbackground.style.backgroundImage =
+            'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/05.jpg")';
+        } else {
+          topbackground.style.backgroundImage =
+            'url("https://raw.githubusercontent.com/PeteChiang1211/chomin/main/01.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
