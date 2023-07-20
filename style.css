@@ -83,11 +83,10 @@ body main section.concern {
   min-height: 70vh;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: left;
   align-items: center;
-  padding-left: 10rem;
 }
 body main section.concern h2 {
+  padding-left: 10rem;
   font-size: 2.5rem;
   color: white;
 }
@@ -97,27 +96,27 @@ body main section.concern h2 p {
   padding-top: 1rem;
 }
 body main section.contect {
-  background-color: rgb(255, 255, 255);
   display: flex;
-  padding: 3rem 3rem;
-  align-items: center;
-  flex: 1 1 200px;
+  flex-wrap: wrap;
+  background-color: white;
 }
-body main section.contect h3 {
+body main section.contect div.left {
+  flex: 1 1 100px;
+  padding: 3rem;
+}
+body main section.contect div.left h3 {
   font-size: 2.5rem;
 }
-body main section.contect h3 p {
+body main section.contect div.left h3 p {
   font-size: 1.5rem;
 }
-body main section.right {
-  display: flex;
-  flex: 1 1 500px;
-  background-color: white;
-  justify-content: right;
+body main section.contect div.right {
+  flex: 1 1 200px;
 }
-body main section.right iframe {
-  width: 70%;
-  height: 50vh;
+body main section.contect div.right iframe {
+  padding: 2rem;
+  width: 100%;
+  height: 350px;
 }
 body footer {
   background-color: black;
